@@ -14,6 +14,8 @@ public class PGameOverState : PAllStates
     {
         base.Enter();
         _gameOverText.text = "You Lose\n Your Score = " + _pStateMachine.PlayerScore.ToString();
+        _audioSource.clip = _sFXClips[(int)ESFX.GAMEOVER];
+        _audioSource.Play();
 
     }
 

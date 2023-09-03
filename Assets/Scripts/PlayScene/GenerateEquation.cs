@@ -13,15 +13,12 @@ public class GenerateEquation : Subject, IObserver
     [SerializeField] GameObject _gameOverScreen;
     [SerializeField] CountdownBar _countdownBar;
     [SerializeField] AudioSource _audioSource;
-    [SerializeField] AudioClip _loseSFX;
-    [SerializeField] AudioClip _correctSFX;
 
 
     int _correctness;
     void Start()
     {
         _gameOverScreen.SetActive(false);
-        // SpawnEquation(1);
 
         _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null)
@@ -29,10 +26,6 @@ public class GenerateEquation : Subject, IObserver
             Debug.Log("Couldnt find AudioSource");
         }
 
-        // _observers.ForEach((_observer) =>
-        // {
-        //    Debug.Log(_observer.ToString());
-        // });
     }
 
 
@@ -81,19 +74,16 @@ public class GenerateEquation : Subject, IObserver
 
     public void CorrectAnswer()
     {
-        Debug.Log("correct");
-        _audioSource.PlayOneShot(_correctSFX);
+        // Debug.Log("GenerateEquation: CorrectAnswer()");
+        NotifyObservers(EPState.GETSCORE);
         _countdownBar.Reset();
-        NotifyObservers(EPState.GETSCORE); 
+        
     }
 
     public void GameOver()
     {
-        _audioSource.clip = _loseSFX;
-        _audioSource.Play();
-        // _audioSource.PlayOneShot(_loseSFX);
-        _gameOverScreen.SetActive(true);
         NotifyObservers(EPState.GAMEOVER);
+        _gameOverScreen.SetActive(true);
         this.gameObject.SetActive(false);
         this.enabled = false;
     }
@@ -104,13 +94,13 @@ public class GenerateEquation : Subject, IObserver
     }
 
     
-    public void NotifyObservers(EPState pState)
-    {
-        _observers.ForEach((_observer) =>
-        {
-            _observer.OnNotify(pState);
-        });
-    }
+    // public void NotifyObservers(EPState pState)
+    // {
+    //     _observers.ForEach((_observer) =>
+    //     {
+    //         _observer.OnNotify(pState);
+    //     });
+    // }
     
 
 

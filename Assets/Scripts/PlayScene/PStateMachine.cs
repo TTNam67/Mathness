@@ -12,6 +12,7 @@ public class PStateMachine : StateMachine, IObserver
     [HideInInspector] public PGameOverState _pGameOverState;
 
     public AudioSource _audioSource;
+    public AudioClip[] _sFXClips;
     public GenerateEquation _generateEquation;
     public Text _scoreText;
     public Text _gameOverText;
@@ -52,15 +53,17 @@ public class PStateMachine : StateMachine, IObserver
 
     public void OnNotify(EPState pState)
     {
-        Debug.Log("whut");
         if (pState == EPState.GETSCORE)
         {
             Debug.Log("Get Score");
+            _audioSource.clip = _sFXClips[(int)ESFX.GETSCORE];
+            _audioSource.Play();
             _playerScore++;
         }
         else if (pState == EPState.GAMEOVER)
         {
             ChangeState(_pGameOverState);
+            
         }
     }   
 
