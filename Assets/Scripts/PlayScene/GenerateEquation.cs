@@ -4,57 +4,44 @@ using UnityEngine;
 using UnityEngine.UI;
 using ObserverPattern;
 
-public enum GameState
-{
-    GameOver
-}
-
-public enum SFX
-{
-    Correct = 0,
-    Wrong
-}
-
-public class GenerateEquation : MonoBehaviour
+public class GenerateEquation : Subject, IObserver
 {
     int _1stNum, _2ndNum;
     [SerializeField] Text _equation;
     [SerializeField] Text _scoreText;
-    [SerializeField] GameObject _gameOverScreen;
     [SerializeField] Text _gameOverText;
-
+    [SerializeField] GameObject _gameOverScreen;
     [SerializeField] CountdownBar _countdownBar;
-
     [SerializeField] AudioSource _audioSource;
-    [SerializeField] AudioClip[] _SFXs;
+    [SerializeField] AudioClip _loseSFX;
+    [SerializeField] AudioClip _correctSFX;
 
 
-    int _logic;
-    int _score = -1;
+    int _correctness;
     void Start()
     {
-        _logic = 1;
         _gameOverScreen.SetActive(false);
-        SpawnEquation(1);
+        // SpawnEquation(1);
 
         _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null)
         {
             Debug.Log("Couldnt find AudioSource");
         }
+
+        // _observers.ForEach((_observer) =>
+        // {
+        //    Debug.Log(_observer.ToString());
+        // });
     }
 
-    // Update is called once per frame
 
 
-    public void SpawnEquation(int tag)
+    public void SpawnEquation()
     {
-
-        CheckAnswer(tag);
-
         _1stNum = Random.Range(0, 100);
         _2ndNum = Random.Range(0, 100);
-        _logic = Random.Range(0, 2);
+        _correctness = Random.Range(0, 2);
 
         // The sign of the equation 
         int sign = Random.Range(-1, 1);
@@ -67,9 +54,8 @@ public class GenerateEquation : MonoBehaviour
 
         // if the equation is set to false
         int offset = 0;
-        if (_logic == 0)
+        if (_correctness == 0)
         {
-            
             do 
             {
                 offset = Random.Range(-10, 11);
@@ -81,9 +67,9 @@ public class GenerateEquation : MonoBehaviour
         _equation.text = _1stNum.ToString() + signText + _2ndNum.ToString() + " = " + ans.ToString();
     }
 
-    void CheckAnswer(int tag)
+    public void CheckAnswer(int tagOfAnswer)
     {
-        if (tag == _logic)
+        if (tagOfAnswer == _correctness)
         {
             CorrectAnswer();
         }
@@ -95,23 +81,39 @@ public class GenerateEquation : MonoBehaviour
 
     public void CorrectAnswer()
     {
-        _audioSource.clip = _SFXs[0];
-        _audioSource.Play();
+        Debug.Log("correct");
+        _audioSource.PlayOneShot(_correctSFX);
         _countdownBar.Reset();
-        _score++;
-        _scoreText.text = "Score = " + _score.ToString();
+        NotifyObservers(EPState.GETSCORE); 
     }
 
     public void GameOver()
     {
-        _audioSource.clip = _SFXs[1];
+        _audioSource.clip = _loseSFX;
         _audioSource.Play();
+        // _audioSource.PlayOneShot(_loseSFX);
         _gameOverScreen.SetActive(true);
-        _gameOverText.text = "You Lose\n Your Score = " + _score.ToString();
-        print("Thoat game");
+        NotifyObservers(EPState.GAMEOVER);
+        this.gameObject.SetActive(false);
+        this.enabled = false;
+    }
+
+    public void OnNotify(EPState pState)
+    {
+        
     }
 
     
-
+    public void NotifyObservers(EPState pState)
+    {
+        _observers.ForEach((_observer) =>
+        {
+            _observer.OnNotify(pState);
+        });
+    }
     
+
+
+
+
 }

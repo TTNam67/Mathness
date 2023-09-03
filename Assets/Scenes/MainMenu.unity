@@ -697,6 +697,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 648274626}
     m_Modifications:
+    - target: {fileID: 386096980546837999, guid: 08b3fcd986294c84b857aae6248a089d, type: 3}
+      propertyPath: sceneIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2261201306675132496, guid: 08b3fcd986294c84b857aae6248a089d, type: 3}
       propertyPath: m_Name
       value: Crossfade
@@ -800,6 +804,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2550019143587190897, guid: 08b3fcd986294c84b857aae6248a089d, type: 3}
   m_PrefabInstance: {fileID: 3466909599955962525}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &3466909599955962528 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7926102625455401063, guid: 08b3fcd986294c84b857aae6248a089d, type: 3}
+  m_PrefabInstance: {fileID: 3466909599955962525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4695058055314411872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -895,5 +904,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4695058055567004638, guid: 591d5173f3bcaab4c9d1b4185c06dfbe, type: 3}
+      propertyPath: _transition
+      value: 
+      objectReference: {fileID: 3466909599955962528}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 591d5173f3bcaab4c9d1b4185c06dfbe, type: 3}

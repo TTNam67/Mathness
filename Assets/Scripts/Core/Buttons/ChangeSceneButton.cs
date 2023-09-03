@@ -12,6 +12,10 @@ public class ChangeSceneButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
     [SerializeField] private Sprite _default, _pressed;
     [SerializeField] private AudioClip _compressedClip, _uncompressedClip;
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] Animator _transition;
+    [SerializeField] float _transitionTime = .44f;
+    string a_StartCrossfade = "StartCrossfade";
+
     RectTransform _rectTransform;
     [SerializeField] int _sceneId;
     float _changeY = 5.6f;
@@ -37,7 +41,7 @@ public class ChangeSceneButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
         _image.sprite = _default;
         _audioSource.PlayOneShot(_uncompressedClip);
 
-        Invoke("LoadGameScene", 0f);
+        Invoke("LoadNextScene", 0f);
 
         Vector2 anchoredPosition = _rectTransform.anchoredPosition;
 
@@ -64,8 +68,15 @@ public class ChangeSceneButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
         
     }
 
-    void LoadGameScene()
+    void LoadNextScene()
     {
+        StartCoroutine(LoadLevel(_sceneId));
+    }
+
+    IEnumerator LoadLevel(int _sceneId)
+    {
+        _transition.SetTrigger(a_StartCrossfade);
+        yield return new WaitForSeconds(_transitionTime);
         SceneManager.LoadScene(_sceneId);
     }
 }

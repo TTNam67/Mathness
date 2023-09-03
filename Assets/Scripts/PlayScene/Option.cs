@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-public class IOption : MonoBehaviour
+public class Option : MonoBehaviour
 {
     [SerializeField] int _tag;
     [SerializeField] GenerateEquation _equation;
@@ -15,7 +15,8 @@ public class IOption : MonoBehaviour
 
     public void CheckAnswer()
     {
-        _equation.SpawnEquation(_tag);
+        _equation.CheckAnswer(_tag);
+        _equation.SpawnEquation();
     }
 
     

@@ -8,7 +8,7 @@ namespace ObserverPattern
         // a collection of all the observers pattern of this subject
         // Lists & HashSets provide simplest setup
         // Dictionaries provides better performance for large collections
-        private List<IObserver> _observers = new List<IObserver>();
+        public List<IObserver> _observers = new List<IObserver>();
 
         public void AddObserver(IObserver observer)
         {
@@ -28,11 +28,19 @@ namespace ObserverPattern
         //     })
         // }
 
-        protected void NotifyObservers()
+        // protected void NotifyObservers()
+        // {
+        //     _observers.ForEach((_observer) =>
+        //     {
+        //         _observer.OnNotify();
+        //     });
+        // }
+
+        protected void NotifyObservers(EPState pState)
         {
             _observers.ForEach((_observer) =>
             {
-                _observer.OnNotify();
+                _observer.OnNotify(pState);
             });
         }
     }

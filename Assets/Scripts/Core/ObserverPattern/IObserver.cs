@@ -2,7 +2,8 @@ namespace ObserverPattern
 {
     public interface IObserver
     {
-        public void OnNotify();
+        // public void OnNotify();
+        public void OnNotify(EPState pState);
 
         /*Type of parameter on OnNotify() can vary based on the requirements of the specific project and 
         what data the observers might need 

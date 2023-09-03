@@ -10,13 +10,15 @@ public class CountdownBar : MonoBehaviour
     [SerializeField] GenerateEquation _generateEquation;
     Image _fillImage;
     // [SerializeField] Sprite[] _sprites;
-    float _countdownMax = 2f;
+    float _countdownMax = 3.5f;
 
     void Start()
     {
         _slider = GetComponent<Slider>();
         if (_slider == null)
             Debug.LogWarning("HealthBar.cs: Slider is null");
+        
+        _slider.maxValue = _countdownMax;
 
         _fillImage = transform.GetChild(0).GetComponent<Image>();
 
