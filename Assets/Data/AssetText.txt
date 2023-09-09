@@ -1,0 +1,9 @@
+hello,xin chào
+goodbye,tạm biệt
+cat,mèo
+dog,chó
+house,nhà
+computer,máy tính
+book,sách
+car,xe hơi
+flower,hoa

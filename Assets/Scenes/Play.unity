@@ -1047,7 +1047,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e3157e883fe9a6341adfc1ebad695528, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1145,6 +1145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3ebd45e52cec444a6b48f12939ae69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _backgroundClips:
+  - {fileID: 8300000, guid: 29f45ee059755a543a88b7a67f08e75e, type: 3}
+  - {fileID: 8300000, guid: f3b335315b664e94490e70051d6f8da1, type: 3}
+  - {fileID: 8300000, guid: a15beab625069d349a150764a06e137d, type: 3}
+  _congratulationSFX: {fileID: 0}
 --- !u!4 &795360539
 Transform:
   m_ObjectHideFlags: 0
@@ -1208,10 +1213,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1819,8 +1824,6 @@ MonoBehaviour:
   _gameOverScreen: {fileID: 675658760}
   _countdownBar: {fileID: 107748413}
   _audioSource: {fileID: 1295035157}
-  _loseSFX: {fileID: 8300000, guid: c105148bda3da894694bc7096f21ee71, type: 3}
-  _correctSFX: {fileID: 8300000, guid: c7db4b212dc8fb24ab580753660954fd, type: 3}
 --- !u!114 &1295035155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,9 +1993,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 0}
-  _generateEquation: {fileID: 0}
-  _scoreText: {fileID: 0}
-  _score: 0
+  _sFXClips:
+  - {fileID: 8300000, guid: c7db4b212dc8fb24ab580753660954fd, type: 3}
+  - {fileID: 8300000, guid: c105148bda3da894694bc7096f21ee71, type: 3}
+  _generateEquation: {fileID: 1295035154}
+  _scoreText: {fileID: 89808459}
+  _gameOverText: {fileID: 202050359}
+  _backgroungMusic: {fileID: 795360538}
+  _playerScore: 0
 --- !u!82 &1402751901
 AudioSource:
   m_ObjectHideFlags: 0

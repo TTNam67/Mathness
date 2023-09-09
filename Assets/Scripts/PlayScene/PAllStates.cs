@@ -12,6 +12,10 @@ public class PAllStates : BaseState
     protected GenerateEquation _generateEquation;
     protected Text _scoreText;
     protected Text _gameOverText;
+
+    protected int _easyLevelPassScore = 3;
+    protected int _mediumLevelPassScore = 6;
+    protected int _hardLevelPassScore = 9;
     public PAllStates(string name, StateMachine stateMachine) : base(name, stateMachine)
     {
         _pStateMachine = (PStateMachine) stateMachine;

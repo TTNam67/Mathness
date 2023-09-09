@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ObserverPattern;
 
-public class CountdownBar : MonoBehaviour
+public class CountdownBar : MonoBehaviour, IObserver
 {
     public Slider _slider;
     [SerializeField] Image _image;
     [SerializeField] GenerateEquation _generateEquation;
     Image _fillImage;
     // [SerializeField] Sprite[] _sprites;
-    float _countdownMax = 3.5f;
+    float _countdownMax = 3f;
 
     void Start()
     {
@@ -54,9 +55,30 @@ public class CountdownBar : MonoBehaviour
         return t;
     }
 
+    public void SetMaxTime(float time)
+    {
+        _slider.maxValue = time;
+    }
+
     public void Reset()
     {
         _slider.value = _countdownMax;
+    }
+
+    public void OnNotify(EPState pState)
+    {
+        if (pState == EPState.EASY_LEVEL_PASSED)
+        {
+            SetMaxTime(2.6f);
+        }
+        else if (pState == EPState.MEDIUM_LEVEL_PASSED)
+        {
+            SetMaxTime(2.2f);
+        }
+        else if (pState == EPState.HARD_LEVEL_PASSED)
+        {
+            SetMaxTime(1.9f);
+        }
     }
 
 }

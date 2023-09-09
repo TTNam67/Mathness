@@ -70,7 +70,7 @@ namespace FSM
         //     })
         // }
 
-        protected void NotifyObservers(EPState pState)
+        public void NotifyObservers(EPState pState)
         {
             _observers.ForEach((_observer) =>
             {

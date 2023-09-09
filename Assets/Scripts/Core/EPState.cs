@@ -1,8 +1,11 @@
 
 public enum EPState 
 {
-    GETSCORE,
-    GAMEOVER
+    GET_SCORE,
+    EASY_LEVEL_PASSED,
+    MEDIUM_LEVEL_PASSED,
+    HARD_LEVEL_PASSED,
+    GAME_OVER
 }
 
 

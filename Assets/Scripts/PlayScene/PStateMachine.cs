@@ -8,6 +8,7 @@ using FSM;
 
 public class PStateMachine : StateMachine, IObserver
 {
+    
     [HideInInspector] public PPlayState _pPlayState;
     [HideInInspector] public PGameOverState _pGameOverState;
 
@@ -16,7 +17,9 @@ public class PStateMachine : StateMachine, IObserver
     public GenerateEquation _generateEquation;
     public Text _scoreText;
     public Text _gameOverText;
+    public BackgroundMusic _backgroungMusic;
     public int _playerScore = 0;
+    
 
     private void Awake()
     {
@@ -33,6 +36,7 @@ public class PStateMachine : StateMachine, IObserver
            Debug.Log("Scoretext" + _scoreText);
         
         AddObserver(_generateEquation);
+        AddObserver(_backgroungMusic);
         _generateEquation.AddObserver(this);
         
 
@@ -53,14 +57,16 @@ public class PStateMachine : StateMachine, IObserver
 
     public void OnNotify(EPState pState)
     {
-        if (pState == EPState.GETSCORE)
+        if (pState == EPState.GET_SCORE)
         {
-            Debug.Log("Get Score");
+            
             _audioSource.clip = _sFXClips[(int)ESFX.GETSCORE];
+            _audioSource.volume = .45f;
             _audioSource.Play();
             _playerScore++;
+
         }
-        else if (pState == EPState.GAMEOVER)
+        else if (pState == EPState.GAME_OVER)
         {
             ChangeState(_pGameOverState);
             
