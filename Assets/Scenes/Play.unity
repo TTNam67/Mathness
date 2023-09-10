@@ -634,6 +634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossfade
       objectReference: {fileID: 0}
+    - target: {fileID: 2261201306675132496, guid: 08b3fcd986294c84b857aae6248a089d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2550019143587190897, guid: 08b3fcd986294c84b857aae6248a089d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -749,7 +753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &675658761
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1820,10 +1824,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _equation: {fileID: 1295035155}
   _scoreText: {fileID: 89808459}
-  _gameOverText: {fileID: 202050359}
-  _gameOverScreen: {fileID: 675658760}
   _countdownBar: {fileID: 107748413}
   _audioSource: {fileID: 1295035157}
+  _gameOverText: {fileID: 202050359}
+  _gameOverScreen: {fileID: 675658760}
 --- !u!114 &1295035155
 MonoBehaviour:
   m_ObjectHideFlags: 0

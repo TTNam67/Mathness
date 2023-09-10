@@ -6,18 +6,17 @@ using ObserverPattern;
 
 using FSM;
 
-public class PStateMachine : StateMachine, IObserver
+public class PEStateMachine : StateMachine, IObserver
 {
     
-    [HideInInspector] public PPlayState _pPlayState;
-    [HideInInspector] public PGameOverState _pGameOverState;
+    [HideInInspector] public PEPlayState _pEPlayState;
+    [HideInInspector] public PEGameOverState _pEGameOverState;
 
     public AudioSource _audioSource;
     public AudioClip[] _sFXClips;
-    public GenerateEquation _generateEquation;
+    public GenerateWords _generateWords;
     public Text _scoreText;
     public Text _gameOverText;
-    public BackgroundMusic _backgroungMusic;
     public int _playerScore = 0;
     
 
@@ -35,19 +34,17 @@ public class PStateMachine : StateMachine, IObserver
         if (_scoreText == null)
            Debug.Log("Scoretext" + _scoreText);
         
-        AddObserver(_generateEquation);
-        AddObserver(_backgroungMusic);
-        _generateEquation.AddObserver(this);
-        
+        AddObserver(_generateWords);
+        _generateWords.AddObserver(this);
 
-        _pPlayState = new PPlayState(this);
-        _pGameOverState = new PGameOverState(this);
+        _pEPlayState = new PEPlayState(this);
+        _pEGameOverState = new PEGameOverState(this);
     }
 
 
     protected override BaseState GetInitialState()
     {
-        return _pPlayState;
+        return _pEPlayState;
     }
 
     public void OnNotify()
@@ -59,17 +56,14 @@ public class PStateMachine : StateMachine, IObserver
     {
         if (pState == EPState.GET_SCORE)
         {
-            
             _audioSource.clip = _sFXClips[(int)ESFX.GETSCORE];
             _audioSource.volume = .55f;
             _audioSource.Play();
             _playerScore++;
-
         }
         else if (pState == EPState.GAME_OVER)
         {
-            ChangeState(_pGameOverState);
-            
+            ChangeState(_pEGameOverState);
         }
     }   
 

@@ -1,9 +1,22 @@
 hello,xin chào
 goodbye,tạm biệt
-cat,mèo
-dog,chó
-house,nhà
+cat,con mèo
+dog,con chó
+house,ngôi nhà
 computer,máy tính
-book,sách
+book,quyển sách
 car,xe hơi
-flower,hoa
+flower,bông hoa
+bicycle,xe đạp
+sun,mặt trời
+moon,mặt trăng
+spoon,cái thìa
+fork,cái dĩa
+garden,khu vườn
+school,trường học
+pen,cái bút mực
+storm,cơn bão
+mountain,ngọn núi
+river,dòng sông
+pond,cái ao
+apple,quả táo
