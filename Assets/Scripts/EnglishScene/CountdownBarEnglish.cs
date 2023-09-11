@@ -11,7 +11,7 @@ public class CountdownBarEnglish : MonoBehaviour, IObserver
     [SerializeField] GenerateEquation _generateEquation;
     Image _fillImage;
     // [SerializeField] Sprite[] _sprites;
-    float _countdownMax = 3f;
+    float _countdownMax = 12f;
 
     void Start()
     {

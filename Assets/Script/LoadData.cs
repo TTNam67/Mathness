@@ -12,10 +12,10 @@ public class LoadData : MonoBehaviour
     private void Start()
     {
         LoadDatabase(_dataFile);
-        foreach(var i in _dictionary)
-        {
-            print($"{i.Key}: {i.Value}");
-        }
+        // foreach(var i in _dictionary)
+        // {
+        //     print($"{i.Key}: {i.Value}");
+        // }
     }
 
     private void LoadDatabase(TextAsset dataFile)

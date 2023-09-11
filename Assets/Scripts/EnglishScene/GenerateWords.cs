@@ -8,23 +8,26 @@ using ObserverPattern;
 public class GenerateWords : Subject, IObserver
 {
     [SerializeField] LoadData _data;
-    string _tag1 = "";
-    string _tag2 = "";
+
+    EOption _prevOption = new EOption();
+    string _tmpTag = "";
     [SerializeField] TextAsset _a1;
     [SerializeField] TextAsset _a2;
     [SerializeField] TextAsset _b1;
     [SerializeField] TextAsset _textAsset;
-    [SerializeField] Text[] _words;
-    [SerializeField] Text[] _meanings;
+    [SerializeField] Text[] _words;//list of words
+    [SerializeField] Text[] _meanings; // list of meanings
     void Start()
     {
-        
+        _prevOption.Tag = "";
     }
 
+    //Generate words when enter the game
     public void Generate()
     {
         //Temporarily contains the displaying words
         List <string> tmpKeyList = new List<string>();
+
         for (int i = 0; i < 5; i++)
         {
             int max = _data._keyList.Count;
@@ -34,7 +37,6 @@ public class GenerateWords : Subject, IObserver
         }
 
         //Shuffle the keyList
-        
         for (int i = 0; i < 5; i++) 
         {
             int j = Random.Range(0, 5);
@@ -49,25 +51,53 @@ public class GenerateWords : Subject, IObserver
         }
     }
 
-    public void CheckAnswer(string tag)
+    public void CheckAnswer(EOption currentOption)
     {
+ 
         //If player havent selected any box -> tick the box player have just selected 
-        if (_tag1 == "")
+        if (_tmpTag == "")
         {
-            _tag1 = tag;
+            _tmpTag = currentOption.Tag;
+            _prevOption = currentOption;
+            currentOption.Ticked();
+            // _options.Add(eOption);
         }
         // If player have selected 1 box
-        else if (_tag1 != "" && _tag2 == "")
+        else if (_tmpTag != "")
         {
             //If 2 boxes that are selected have the same tag -> unticked 2 boxes
-            if (_tag1 == tag)
+            if (_prevOption.Tag == currentOption.Tag)
             {
-
+                print("tag is the same");
+                _prevOption.Reset();
+                _tmpTag = "";
+                // _options[0].Reset();
             }
             // If 2 boxes are selected have different tags -> check the correctness
             else
-            {
-
+            {   
+                if (_data._dictionary.ContainsKey(_prevOption._displayText.text))
+                {
+                    if (_data._dictionary[_prevOption._displayText.text] == currentOption._displayText.text)
+                    {
+                        print("meaning matched 1st way");
+                    }
+                }
+                else if (_data._dictionary.ContainsKey(currentOption._displayText.text))
+                {
+                    if (_data._dictionary[currentOption._displayText.text] == _prevOption._displayText.text)
+                    {
+                        print("meaning matched 2nd way");
+                    }
+                }
+                else 
+                {
+                    print("no match");
+                }
+                _tmpTag = "";
+                _prevOption.Reset();
+                currentOption.Reset();
+                // _prevOption = new EOption();
             }
         }
 

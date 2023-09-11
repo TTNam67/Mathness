@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -58.764, y: -51.8506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1779973579418351502
 CanvasRenderer:
@@ -203,7 +203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1779973579560791522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5254269339592135321}
+        m_TargetAssemblyTypeName: EOption, Assembly-CSharp
+        m_MethodName: CheckAnswer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5254269339592135321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +229,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tag: w
+  _displayText: {fileID: 1779973579418351503}
+  _isClicked: {fileID: 3072522929342112405}
+  _index: 0
 --- !u!1 &3072522929342112405
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5371157994650889087
 RectTransform:
   m_ObjectHideFlags: 0
