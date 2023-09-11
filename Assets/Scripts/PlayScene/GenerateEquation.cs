@@ -241,7 +241,7 @@ public class GenerateEquation : Subject, IObserver
         else if (pState == EPState.HARD_LEVEL_PASSED)
         {
             _currentLevel = (int)ECurrentLevel.INSANE;
-            _maxMultiplyNum = _hardLevelMultiplyRange;
+            _maxMultiplyNum = _insaneLevelMultiplyRange;
             Debug.Log("Pass hard");
         }
     }

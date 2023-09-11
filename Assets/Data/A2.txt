@@ -1,0 +1,583 @@
+accident,tai nạn
+act,hành động
+action,hành động
+activity,hoạt động
+actor,diễn viên
+actually,thực ra
+add,thêm
+address,địa chỉ
+adult,người trưởng thành
+advanced,nâng cao
+concert,buổi hòa nhạc
+adventure,cuộc phiêu lưu
+advertisement,quảng cáo
+cheap,rẻ
+advice,lời khuyên
+aeroplane,máy bay
+afternoon,buổi chiều
+afterwards,sau đó
+again,lại
+age,tuổi
+agree,đồng ý
+air,không khí
+airport,sân bay
+album,quyển album
+all,tất cả
+allow,cho phép
+alone,một mình
+amazing,tuyệt vời
+ambulance,xe cấp cứu
+angry,tức giận
+animal,động vật
+any,bất kỳ
+anybody,bất cứ ai
+anything,bất cứ điều gì
+anywhere,bất cứ đâu
+apartment,căn hộ
+application,ứng dụng
+apple,quả táo
+disappointment,sự thất vọng
+area,khu vực
+arm,cánh tay
+armchair,ghế bành
+arrive,đến
+art,nghệ thuật
+article,bài báo
+ask,hỏi
+assistant,trợ lý
+attractive,thu hút
+aunt,dì
+autumn,mùa thu
+away,xa
+awesome,tuyệt vời
+awful,tồi tệ
+baby,em bé
+back,cái lưng
+backpack,balo
+bad,xấu
+badly,tồi tệ
+badminton,cầu lông
+bag,túi
+bake,cái bánh
+balloon,quả bóng bay
+banana,quả chuối
+band,ban nhạc
+bank,ngân hàng
+baseball,bóng chày
+basketball,bóng rổ
+bat,con dơi
+bath,bồn tắm
+bathing suit,đồ bơi
+bathroom,phòng tắm
+bathtub,bồn tắm
+battery,pin
+beach,bãi biển
+bean,hạt đậu
+bear,con gấu
+beard,râu
+beautiful,xinh đẹp
+because,bởi vì
+bed,giường ngủ
+bedroom,phòng ngủ
+bee,con ong
+begin,bắt đầu
+believe,tin tưởng
+belong,thuộc về
+belt,thắt lưng
+best,tốt nhất
+better,tốt hơn
+bicycle,xe đạp
+bike,xe đạp
+bill,hóa đơn
+bin,thùng rác
+biology,sinh học
+bird,con chim
+birthday,sinh nhật
+biscuit,bánh quy
+black,màu đen
+blanket,cái chăn
+blood,máu
+board,bảng
+boat,con thuyền
+body,cơ thể
+boil,sôi
+book,quyển sách
+bookshelf,giá sách
+bookshop,hiệu sách
+boot,cốp xe
+boring,nhàm chán
+born,sinh ra
+cafeteria,nhà ăn
+cake,bánh
+calendar,lịch
+camel,con lạc đà
+camera,máy ảnh
+camping,cắm trại
+campsite,khu cắm trại
+cap,mũ lưỡi trai
+capital,thủ đô
+car,ô tô
+card,thẻ
+career,sự nghiệp
+careful,cẩn thận
+car park,bãi đậu xe
+carpet,thảm
+carrot,củ cà rốt
+cartoon,hoạt hình
+cash,tiền mặt
+castle,lâu đài
+cat,con mèo
+ceiling,trần nhà
+celebrate,kỷ niệm
+celebrity,người nổi tiếng
+century,thế kỷ
+cereal,ngũ cốc
+coast,bờ biển
+cold,lạnh
+colleague,đồng nghiệp
+collect,sưu tầm
+color,màu sắc
+comb,cái lược
+come,đến
+come back,quay lại
+comedy,hài
+comfortable,thoải mái
+comic,truyện tranh
+company,công ty
+competition,cuộc thi
+complete,hoàn thành
+computer,máy tính
+concert,hòa nhạc
+congratulations,chúc mừng
+contact,liên lạc
+continue,tiếp tục
+conversation,cuộc hội thoại
+cook,nấu ăn
+cooker,lò nướng
+cookie,bánh quy
+cool,mát mẻ
+design,thiết kế
+desk,bàn
+dessert,món tráng miệng
+details,chi tiết
+diary,nhật ký
+dictionary,từ điển
+die,chết
+difference,sự khác biệt
+different,khác
+digital,kỹ thuật số
+dining room,phòng ăn
+dinner,bữa tối
+dinosaur,khủng long
+diploma,bằng tốt nghiệp
+directions,phương hướng
+dirty,bẩn
+disco,nhạc disco
+discount,giảm giá
+discover,khám phá
+discuss,thảo luận
+dish,đĩa
+daily,hàng ngày
+dance,nhảy/múa
+dancer,vũ công
+danger,mối nguy hiểm
+dangerous,nguy hiểm
+dark,tối
+date,ngày trong tuần
+daughter,con gái
+day,ngày trong tháng
+dead,qua đời
+dear,thân mến
+decide,quyết định
+deep,sâu
+degree,bằng cấp
+delicious,ngon
+deliver,giao/vận chuyển
+dentist,nha sĩ
+department,căn hộ
+everyone,mọi người
+everything,mọi thứ
+everywhere,mọi nơi
+exactly,chính xác
+example,ví dụ
+excellent,xuất sắc
+excited,hào hứng
+exciting,thú vị
+exercise,bài tập
+exhibition,triển lãm
+expensive,đắt
+experiment,thí nghiệm
+explain,giải thích
+explorer,nhà thám hiểm
+electricity,điện
+elephant,con voi
+elevator,thang máy
+empty,trống rỗng
+end,kết thúc
+engine,động cơ
+engineer,kỹ sư
+enjoy,tận hưởng
+enter,đi vào
+competition,cuộc thi
+entrance,lối vào
+envelope,phong bì
+environment,môi trường
+equipment,thiết bị
+face,gương mặt
+fact,sự thật
+factory,nhà máy
+fail,hỏng/thất bại
+fair,công bằng
+fall,mùa thu/rơi
+family,gia đình
+famous,nổi tiếng
+fan,người hâm mộ
+fantastic,tuyệt vời
+far,xa
+farm,nông trại
+farmer,nông dân
+fashion,thời trang
+fast,nhanh
+fast food,đồ ăn nhanh
+fat,béo phì
+favourite,yêu thích
+feel,cảm thấy
+feelings,cảm nhận
+festival,lễ hội
+few,một vài
+field,cánh đồng
+file,tài liệu
+fill,điền
+film,phim ảnh
+final,cuối cùng
+finally,cuối cùng
+find,tìm kiếm
+fine,tốt/ổn
+finger,ngón tay
+finish,kết thúc
+fire,lửa
+fork,cái nĩa
+forget,quên
+free,tự do
+friendly,thân thiện
+frightened,sợ hãi
+furniture,nội thất
+gallery,phòng trưng bày
+game,trò chơi
+garage,ga-ra
+garden,vườn
+garlic,tỏi
+gas,khí ga
+gas station,trạm xăng
+gate,cổng
+geography,địa lý
+get,lấy
+gift,món quà
+girl,con gái
+girlfriend,bạn gái
+give back,trả lại
+glad,vui mừng
+glove,găng tay
+go,đi
+goal,mục tiêu
+gold,vàng
+golden,vàng
+golf,gôn
+good,tốt
+good afternoon,chào buổi chiều
+goodbye,tạm biệt
+good evening,chào buổi tối
+good-looking,ưa nhìn
+good morning,chào buổi sáng
+good night,chúc ngủ ngon
+grade,lớp
+grandparent,ông bà
+grandson,cháu trai
+granny,bà ngoại
+grape,quả nho
+grass,cỏ
+great,tuyệt vời
+hair,tóc
+half-price,nửa giá
+hall,hành lang
+hand,tay
+handbag,túi xách
+happen,xảy ra
+happy,vui vẻ
+harbour,hải cảng
+hard,khó khăn
+hat,mũ
+hate,ghét
+have,có
+he,anh ấy
+head,đầu
+headache,đau đầu
+headphones,tai nghe
+headteacher,hiệu trưởng
+health,sức khỏe
+healthy,khỏe mạnh
+hear,nghe
+heart,trái tim
+heating,làm nóng
+heavy,nặng nề
+help,giúp đỡ
+helpful,hữu ích
+her,cô ấy
+high,cao
+hill,đồi
+hip hop,nhạc hip hop
+history,lịch sử
+hit,đánh
+hobby,sở thích
+hockey,khúc côn cầu
+hold,giữ
+holiday,ngày lễ
+home,nhà
+honey,mật ong
+hope,hy vọng
+horrible,tồi tệ
+horror,kinh dị
+horse,con ngựa
+hospital,bệnh viện
+hot,nóng
+hotel,khách sạn
+hour,giờ
+house,ngôi nhà
+housewife,nội trợ
+how,như thế nào
+however,tuy nhiên
+huge,khổng lồ
+hungry,đói
+hurry,vội/gấp
+hurt,đau
+husband,chồng
+ice,đá
+ice cream,kem
+ice skating,trượt băng
+idea,ý tưởng
+if,nếu
+ill,ốm
+immediately,ngay lập tức
+important,quan trọng
+impossible,không thể
+improve,cải thiện
+include,bao gồm
+indoor,trong nhà
+information,thông tin
+ingredient,nguyên liệu
+insect,côn trùng
+instead,thay vì
+instructions,hướng dẫn sử dụng
+instrument,nhạc cụ
+interesting,thú vị
+international,quốc tế
+invention,phát minh
+invitation,lời mời
+jacket,áo khoác
+jam,mứt
+jazz,nhạc jazz
+jeans,quần jean
+jewellery,trang sức
+job,công việc
+join,tham gia
+journalist,nhà báo
+journey,hành trình
+juice,nước ép
+jump,nhảy
+jumper,áo len
+just,chỉ
+keep,giữ
+key,chìa khóa
+keyboard,bàn phím
+kick,đá
+kid,trẻ em
+king,vua
+kiss,hôn
+kit,bộ
+kitchen,nhà bếp
+kite,diều
+knife,con dao
+know,hiểu biết
+lake,hồ
+lamp,đèn
+language,ngôn ngữ
+large,lớn
+last,cuối cùng
+late,muộn
+later,sau này
+latest,mới nhất
+laugh,cười
+lazy,lười biếng
+learn,học
+least,ít nhất
+leather,da
+leave,rời khỏi
+left-hand,tay trái
+leg,chân
+lemon,quả chanh
+licence,giấy phép
+machine,máy móc
+magazine,tạp chí
+mail,thư điện tử
+make-up,trang điểm
+manager,quản lý
+mango,quả xoài
+many,nhiều
+map,bản đồ
+mark,đánh dấu
+market,chợ
+married,kết hôn
+match,trận đấu
+matter,vấn đề
+may,có thể
+maybe,có lẽ
+me,tôi
+meal,bữa ăn
+mean,nghĩa là
+meat,thịt
+mechanic,thợ máy
+medicine,thuốc
+meet,gặp
+meeting,cuộc họp
+name,tên
+national,quốc gia
+nationality,quốc tịch
+nature,thiên nhiên
+natural,tự nhiên
+neck,cổ
+necklace,vòng cổ
+need,cần
+neighbour,hàng xóm
+nervous,lo lắng
+net,mạng lưới
+never,không bao giờ
+new,mới
+news,tin tức
+newspaper,tờ báo
+nice,đẹp
+night,buổi đêm
+nobody,không ai
+noise,tiếng ồn
+noisy,ồn ào
+noon,buổi trưa
+normal,bình thường
+nose,mũi
+not,không
+note,ghi chú
+onion,hành
+online,trực tuyến
+only,duy nhất
+open,mở
+opera,nhạc kịch
+opinion,quan điểm
+opposite,đối diện
+or,hoặc
+orange,quả cam
+ocean,đại dương
+office,văn phòng
+pack,gói ghém
+page,trang
+pain,nỗi đau
+paint,sơn
+painter,họa sĩ
+pale,nhợt nhạt
+pair,cặp
+paper,giấy
+paragraph,đoạn văn
+parent,ba mẹ
+park,công viên
+parking lot,bãi đậu xe
+parrot,con vẹt
+part,phần
+partner,đối tác
+party,bữa tiệc
+passenger,hành khách
+passport,hộ chiếu
+password,mật khẩu
+quarter,một phần tư
+queen,nữ hoàng
+question,câu hỏi
+quick,nhanh
+quiet,yên tĩnh
+quite,khá
+quiz,câu đố
+rabbit,con thỏ
+race,cuộc đua
+racket,vợt
+radio,đài phát thanh
+railway,đường sắt
+rain,mưa
+raincoat,áo mưa
+read,đọc
+refrigerator,tủ lạnh
+ready,sẵn sàng
+sad,buồn
+safe,an toàn
+sale,bán hàng
+salt,muối
+sauce,nước xốt
+sausage,xúc xích
+save,bảo vệ
+say,nói
+scarf,khăn quàng cổ
+scary,đáng sợ
+school,trường học
+science,khoa học
+scientist,nhà khoa học
+scissors,cái kéo
+scooter,xe tay ga
+screen,màn hình
+sea,biển
+season,mùa
+secretary,thư ký
+seem,có vẻ
+teenager,thiếu niên
+telephone,điện thoại
+television,truyền hình
+tell,nói
+temperature,nhiệt độ
+tennis,quần vợt
+tent,lều
+term,kỳ
+terrible,tồi tệ
+test,bài kiểm tra
+text,văn bản
+textbook,sách giáo khoa
+thank,cảm ơn
+think,nghĩ
+thirsty,khát
+umbrella,cái ô
+uncle,chú
+underground,ngầm
+understand,hiểu
+unfortunately,không may
+unhappy,bất hạnh
+uniform,đồng phục
+university,đại học
+various,đa dạng
+vegetable,rau
+video game,trò chơi điện tử
+view,lượt xem
+village,ngôi làng
+violin,vĩ cầm
+visit,thăm
+visitor,du khách
+vocabulary,từ vựng
+volleyball,bóng chuyền
+wait,chờ đợi
+waitress,nhân viên phục vụ
+wake,thức dậy
+walk,đi bộ
+wall,bức tường
+wallet,ví
+want,muốn
+wardrobe,tủ quần áo
+warm,ấm áp
+wash,rửa
+washing machine,máy giặt
+watch,xem
+year,năm
+yellow,màu vàng
+yesterday,hôm qua
+yoghurt,sữa chua
+young,trẻ

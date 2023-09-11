@@ -1,0 +1,293 @@
+activity,hoạt động
+actor,diễn viên nam
+actress,diễn viên nữ
+add,thêm
+address,địa chỉ
+advice,lời khuyên
+afraid,sợ hãi
+afternoon,buổi chiều
+age,tuổi
+agree,đồng ý
+air,không khí
+airport,sân bay
+baby,trẻ nhỏ
+back,trở lại
+bag,túi
+ball,trái bóng
+banana,chuối
+band,ban nhạc
+bank,ngân hàng
+bathroom,phòng tắm
+beach,bờ biển
+beautiful,xinh đẹp
+because,bởi vì
+become,trở thành
+bed,giường
+bedroom,phòng ngủ
+beer,bia
+birthday,ngày sinh nhật
+black,đen
+break,phá vỡ
+breakfast,bữa ăn sáng
+busy,bận rộn
+cafe,quán cà phê
+cake,bánh ngọt
+camera,máy ảnh
+capital,thủ đô
+car,ô tô
+card,thẻ
+career,sự nghiệp
+carrot,củ cà rốt
+century,thế kỷ
+chair,ghế
+change,thay đổi
+cheese,phô mai
+chicken,gà
+child,trẻ em
+chocolate,sô cô la
+choose,chọn
+cinema,rạp chiếu phim
+city,thành phố
+classroom,lớp học
+close,đóng
+clothes,quần áo
+club,câu lạc bộ
+coffee,cà phê
+colour,màu sắc
+common,phổ biến
+company,công ty
+cook,nấu ăn
+customer,khách hàng
+dad,bố
+dance,nhảy
+dangerous,nguy hiểm
+dark,tối
+daughter,con gái
+day,ngày
+dear,thân mến
+december,tháng mười hai
+decide,quyết định
+delicious,ngon
+describe,mô tả
+description,sự mô tả
+designer,nhà thiết kế
+design,thiết kế
+dictionary,từ điển
+dinner,buổi tối
+discuss,thảo luận
+doctor,bác sĩ
+door,cửa
+dress,váy
+drink,uống
+ear,tai
+eat,ăn
+egg,quả trứng
+evening,buổi tối
+example,ví dụ
+exercise,bài tập
+eye,mắt
+face,mặt
+family,gia đình
+famous,nổi tiếng
+fantastic,tuyệt vời
+far,xa
+farm,nông trại
+farmer,người nông dân
+garden,vườn
+geography,môn địa lý
+girl,con gái
+girlfriend,bạn gái
+grandfather,ông 
+grandmother,bà 
+grandparents,ông bà
+green,màu xanh lá
+grow,lớn lên
+hair,tóc
+hand,bàn tay
+happy,vui vẻ
+health,sức khỏe
+healthy,khỏe mạnh
+hear,nghe
+him,anh ấy
+history,lịch sử
+holiday,ngày lễ
+hobby,sở thích
+hope,hy vọng
+hospital,bệnh viện
+hot,nóng
+house,ngôi nhà
+hotel,khách sạn
+however,tuy nhiên
+hungry,đói
+husband,chồng
+ice,nước đá
+include,bao gồm
+information,thông tin
+introduce,giới thiệu
+island,hòn đảo
+jacket,áo khoác
+january,tháng một
+jeans,quần jeans
+job,công việc
+join,tham gia
+journey,chuyến đi
+juice,nước ép
+july,tháng bảy
+june,tháng sáu
+key,chìa khóa
+kitchen,nhà bếp
+language,ngôn ngữ
+large,rộng
+last,cuối cùng
+late,trễ
+later,sau
+laugh,cười
+learn,học
+leave,rời đi
+lesson,bài học
+library,thư viện
+light,ánh sáng
+lion,sư tử
+list,danh sách
+listen,nghe
+live,sống
+lunch,bữa trưa
+machine,máy
+magazine,tạp chí
+map,bản đồ
+march,tháng ba
+market,chợ
+may,tháng năm
+me,tôi
+meal,bữa ăn
+meat,thịt
+meet,gặp mặt
+member,thành viên
+menu,thực đơn
+message,tin nhắn
+midnight,nửa đêm
+monday,thứ hai
+month,tháng
+museum,viện bảo tàng
+music,âm nhạc
+name,tên
+nature,thiên nhiên
+neighbour,hàng xóm
+never,không bao giờ
+new,mới
+news,tin tức
+newspaper,báo chí
+nice,đẹp
+north,hướng bắc
+nose,mũi
+nothing,không có gì
+november,tháng mười một
+now,bây giờ
+number,số
+october,tháng mười
+open,mở
+opinion,ý kiến
+orange,trái cam
+outside,ngoài trời
+page,trang
+paper,giấy
+parents,bố mẹ
+park,công viên
+partner,bạn đồng hành
+party,buổi tiệc
+pepper,hạt tiêu
+pink,màu hồng
+please,vui lòng
+police,công an
+product,sản phẩm
+pretty,đẹp
+read,đọc
+ready,sẵn sàng
+reason,lý do
+red,màu đỏ
+relax,thư giãn
+restaurant,nhà hàng
+river,sông
+road,đường
+salt,muối
+saturday,thứ bảy
+sunday,chủ nhật
+school,trường học
+science,khoa học
+see,nhìn thấy
+send,gửi
+september,tháng chín
+seven,số bảy
+she,cô ấy
+similar,giống
+singer,ca sĩ
+sister,chị em gái
+sleep,ngủ
+small,nhỏ
+son,con trai
+spring,mùa xuân
+statement,bản tường trình
+still,vẫn
+story,câu chuyện
+telephone,điện thoại
+teenager,thanh thiếu niên
+teacher,giáo viên
+team,đội
+television,ti vi
+terrible,kinh khủng
+test,kiểm tra
+thursday,thứ năm
+three,số ba
+together,cùng nhau
+toilet,nhà vệ sinh
+tomato,cà chua
+topic,chủ đề
+traffic,giao thông
+tuesday,thứ ba
+twelve,số mười hai
+type,thể loại
+thousand,ngàn
+umbrella,cái ô
+uncle,chú
+understand,hiểu
+university,trường đại học
+until,cho đến khi
+us,chúng tôi
+use,sử dụng
+useful,có ích
+usually,thường xuyên
+vacation,kỳ nghỉ
+vegetable,rau quả
+video,chiếu phim
+village,làng quê
+visit,thăm quan
+visitor,khách thăm quan
+wait,đợi
+waiter,phục vụ nam
+wake,thức dậy
+walk,đi bộ
+want,muốn
+warm,ấm áp
+wash,rửa
+watch,xem
+water,nước
+weather,thời tiết
+website,trang web
+wednesday,thứ tư
+weekend,ngày cuối tuần
+welcome,chào mừng
+west,hướng tây
+what,cái gì
+white,trắng
+wife,vợ
+window,cửa sổ
+woman,phụ nữ
+wonderful,tuyệt vời
+work,làm việc
+world,thế giới
+would,sẽ
+write,viết
+year,năm
+yellow,màu vàng
+yesterday,hôm qua
+young,trẻ

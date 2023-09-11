@@ -1,0 +1,355 @@
+belt,thắt lưng
+blouse,áo cánh mỏng
+bracelet,vòng tay
+button,cúc áo
+cap,mũ lưỡi trai
+chain,dây xích
+coat,áo khoác dài
+dress,đầm
+earring,hoa tai
+glasses,mắt kính
+glove,găng tay
+handbag,túi xách tay
+handkerchief,khăn tay
+jacket,áo khoác
+jeans,quần bò
+jewelry,trang sức
+leather,da
+material,chất liệu
+necklace,vòng cổ
+pants,quần dài
+perfume,nước hoa
+pocket,túi quần
+scarf,khăn quàng
+shirt,áo sơ mi
+skirt,chân váy ngắn
+fit,vừa vặn
+old-fashioned,lỗi thời
+classic,cổ điển
+gold,màu vàng
+golden,bằng vàng
+green,xanh lá cây
+gray,xám
+orange,cam
+pink,hồng
+purple,tím
+red,đỏ
+silver,bạc
+white,trắng
+yellow,vàng tươi
+app,ứng dụng
+computer,máy tính
+connect,kết nối
+data,dữ liệu
+delete,xóa
+dot,dấu chấm
+download,tải về
+equipment,thiết bị
+file,tập tin
+hardware,phần cứng
+headline,tiêu đề
+home page,trang chủ
+install,lắp đặt
+invent,phát minh
+keyboard,bàn phím
+machine,máy móc
+mouse,chuột máy tính
+parcel,bưu kiện
+password,mật khẩu
+photography,sự chụp ảnh
+podcast,tệp âm thanh
+printer,máy in
+program,lập trình
+robot,người máy
+screen,màn hình
+server,máy chủ
+sign up,đăng ký
+social media,mạng xã hội
+software,phần mềm
+switch off,tắt đi
+switch on,bật lên
+call back,gọi lại
+hang up,cúp máy
+message,tin nhắn
+absent,vắng mặt
+certificate,chứng nhận
+composition,bài luận
+course,khóa học
+diploma,chứng chỉ
+essay,bài tiểu luận
+instructions,sự hướng dẫn
+laboratory,phòng thí nghiệm
+practice,sự luyện tập
+art,nghệ thuật
+biology,sinh học
+chemistry,hóa học
+economics,kinh tế học
+geography,địa lý
+history,lịch sử
+mathematics,toán học
+music,âm nhạc
+physics,vật lý
+science,khoa học
+technology,công nghệ
+arithmetic,số học
+elementary school,trường tiểu học
+intermediate school,trường trung cấp
+primary school,trường tiểu học
+university,trường đại học
+college,trường đại học
+bell,chuông
+blackboard,bảng đen
+bookshelf,kệ sách
+degree desk,bàn học
+notice board,bảng ghi chú
+pencil case,hộp bút
+project,dự án
+rubber,cục tẩy
+ruler,thước kẻ
+act,diễn xuất
+audience,khán giả
+band,ban nhạc
+ballet,vở ballet
+celebrity,người nổi tiếng
+circus,gánh xiếc
+concert,hòa nhạc
+entrance,lối vào
+festival,lễ hội
+exhibition,triển lãm
+instrument,nhạc cụ
+museum,bảo tàng
+musician,nhạc công
+guitarist,nghệ sĩ guitar
+orchestra,dàn nhạc
+performance,buổi biểu diễn
+pop music,nhạc đương đại
+thriller,giật gân
+stage,sân khấu
+ad,quảng cáo
+advertisment,quảng cáo
+advert,quảng cáo
+article,bài báo
+camera,máy ảnh
+magazine,tạp chí
+production,sản phẩm
+channel,kênh
+headline,tiêu đề
+programme,chương trình
+talk show,tọa đàm
+studio,phòng thu
+gas,khí gas
+petrol,xăng dầu
+pollution,sự ô nhiễm
+recycle,tái chế
+recycled,được tái chế
+recycling,sự tái chế
+rubbish bin,thùng rác
+traffic jam,tắc đường
+volunteer,tình nguyện viên
+bake,nướng
+cabbage,bắp cải
+can,lon
+cereal,ngũ cốc
+chips,khoai tây chiên
+cucumber,dưa chuột
+delicious,ngon
+dish,món ăn
+flavor,hương vị
+flour,bột mì
+French fries,khoai tây chiên
+frying pan,chảo rán
+garlic,tỏi
+ingredients,thành phần
+main course,món chính
+melon,dưa gang
+lettuce,rau xà lách
+pasta,mỳ ý
+toast,bánh mì nướng
+cut,cắt
+earache,bệnh đau tai
+hurt,đau
+headache,bệnh nhức đầu
+lie down,nằm xuống
+painful,đau đớn
+patient,bệnh nhân
+pill,viên thuốc
+pharmacy,hiệu thuốc
+prescription,đơn thuốc
+sore throat,đau họng
+stomachache,đau bụng
+toothache,đau răng
+well,khỏe, tốt
+flu,cảm cúm
+operation,phẫu thuật
+recover,hồi phục
+breathe,thở ra
+go jogging,đi bộ
+keep fit,giữ dáng
+take exercise,tập thể dục
+warming up,khởi động
+camping,cắm trại
+campsite,nơi cắm trại
+chess,môn cờ vua
+collect,sưu tầm
+collection,bộ sưu tập
+doll,búp bê
+draw,vẽ
+go shopping,đi mua sắm
+hang out,đi chơi
+opening hours,giờ mở cửa
+paint,vẽ
+sightseeing,cuộc tham quan
+sunbathe,tắm nắng
+tent,lều
+bathroom,phòng tắm
+bedroom,phòng ngủ
+balcony,ban công
+dining room,phòng ăn
+downstairs,dưới tầng
+upstairs,trên tầng
+flat,căn hộ
+apartment,căn hộ
+gate,cái cổng
+garage,ga-ra để xe
+garden,vườn
+kitchen,bếp
+living room,phòng khách
+sitting room,phòng chờ
+accomodation,nơi ở
+address,địa chỉ
+antique,đồ cổ
+bathtub,bồn tắm
+bin,thùng
+blanket,cái chăn
+bookcase,tủ sách
+bowl,bát ăn cơm
+brush,bàn chải
+bucket,cái xô
+bulb,bóng đèn
+carpet,thảm
+ceiling,trần nhà
+cellar,hầm
+chair,ghế dựa
+curtain,rèm cửa
+cushion,đệm
+dishwasher,máy rửa bát
+dustbin,thùng rác
+duvet,chăn lông
+fridge,tủ lạnh
+furniture,đồ nội thất
+kettle,ấm đun nước
+ladder,cái thang
+microwave,lò vi sóng
+mug,cốc có quai
+property,tài sản
+refrigerator,tủ lạnh
+sheet,ga giường
+vase,bình hoa
+chandelier,đèn chùm
+nightstand,tủ đầu giường
+afraid,lấy làm tiếc
+amazed,kinh ngạc
+amusing,vui vẻ, hài hước
+angry,tức giận
+anxious,lo lắng
+ashamed,xấu hổ
+calm,bình tĩnh
+curious,tò mò
+disappointed,thất vọng
+amazing,làm cho kinh ngạc
+awesome,tuyệt vời
+brave,dũng cảm
+challenging,đầy thách thức
+charming,quyến rũ
+confident,tự tin
+cruel,độc ác, tàn nhẫn
+difficult,khó
+disappointing,đáng thất vọng
+embarrassing,đáng xấu hổ
+enjoyable,thú vị
+excellent,xuất sắc
+fantastic,rất tốt
+fond,yêu mến
+generous,rộng lượng
+guilty,có lỗi
+impressed,ấn tượng
+interesting,thú vị
+jealous,ghen tị
+keen,hăng hái, nhiệt tình
+modern,hiện đại
+negative,tiêu cực
+old-fashioned,lỗi mốt
+pleasant,dễ chịu
+realistic,thực tế
+reasonable,hợp lý
+reliable,đáng tin cậy
+rude,thô lỗ
+satisfied,hài lòng
+surprised,ngạc nhiên
+typical,tiêu biểu
+badminton,cầu lông
+baseball,bóng chày
+basketball,bóng rổ
+boxing,võ quyền anh
+climbing,leo núi
+cycling,đạp xe
+dancing,khiêu vũ
+diving,lặn
+fishing,câu cá
+football,bóng đá
+hockey,khúc côn cầu
+horse-riding,cưỡi ngựa
+jogging,đi bộ
+snowboarding,trượt tuyết
+wave surfing,lướt sóng
+swimming,bơi lội
+volleyball,bóng chuyền
+water skiing,trượt nước
+yoga,thiền
+squash,môn bóng quần
+cricket,môn bóng gậy
+bathing suit,đồ tắm
+bicycle,xe đạp
+changing room,phòng thay đồ
+ice skates,giày trượt băng
+locker,tủ khóa
+rugby,quả bóng bầu dục
+skateboard,ván trượt
+snowboard,ván trượt tuyết
+surfboard,ván lướt sóng
+swimming costume,đồ bơi
+fishing rod,cần câu
+beach,bãi biển
+club,câu lạc bộ
+league,giải đấu
+stadium,sân vận động
+racetrack,đường đua
+golf course,sân gôn
+football pitch,sân bóng đá
+catch,bắt
+climb,trèo
+coach,huấn luyện
+practise,luyện tập
+rest,nghỉ ngơi
+run,chạy
+throw,ném
+walk,đi bộ
+advertisement,bài quảng cáo
+shop assistant,người bán hàng
+bargain,mặc cả
+cash,tiền mặt
+cent,xu 
+cheque,tờ séc
+close,đóng cửa
+credit card,thẻ tín dụng
+customer,khách hàng
+guest,khách
+deposit,tiền đặt cọc
+exchange,trao đổi
+hire,thuê
+label,nhãn
+luxury,cao cấp
+pound,bảng Anh
+receipt,biên lai
+reduce,giảm
+reserve,đặt trước

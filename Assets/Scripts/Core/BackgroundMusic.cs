@@ -30,7 +30,7 @@ public class BackgroundMusic : MonoBehaviour, IObserver
     [SerializeField] AudioClip[] _backgroundClips;
     [SerializeField] AudioClip _congratulationSFX;
     float _backgroundMusicVolume = 0.60f;
-    bool _passEasyLevel = false;
+    
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
