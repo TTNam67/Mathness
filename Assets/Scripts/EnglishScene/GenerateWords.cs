@@ -81,6 +81,7 @@ public class GenerateWords : Subject, IObserver
                     if (_data._dictionary[_prevOption._displayText.text] == currentOption._displayText.text)
                     {
                         print("meaning matched 1st way");
+                        NotifyObservers(EPState.GET_SCORE);
                     }
                 }
                 else if (_data._dictionary.ContainsKey(currentOption._displayText.text))
@@ -88,6 +89,7 @@ public class GenerateWords : Subject, IObserver
                     if (_data._dictionary[currentOption._displayText.text] == _prevOption._displayText.text)
                     {
                         print("meaning matched 2nd way");
+                        NotifyObservers(EPState.GET_SCORE);
                     }
                 }
                 else 

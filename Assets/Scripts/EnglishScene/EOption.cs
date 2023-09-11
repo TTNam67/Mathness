@@ -39,7 +39,7 @@ public class EOption : MonoBehaviour
 
     public void Reset()
     {
-        
+        _displayText.text = "";
         _isClicked.SetActive(false);
     }
 

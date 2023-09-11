@@ -59,7 +59,7 @@ public class GenerateEquation : Subject, IObserver
     int _1stNum, _2ndNum, _ans; // for the equation
     int _maxPlusNum, _maxMultiplyNum;
 
-
+    int _cntCorrectness = 0, _maxCorrectnessSequence = 4;
 
     int _correctness;
     void Start()
@@ -81,14 +81,18 @@ public class GenerateEquation : Subject, IObserver
 
     public void SpawnEquation()
     {
+        _correctness = Random.Range(0, _numberOfWrongs + 4);
+        CheckCorrectnessSequence();
+        
         int isMultiplyEquation = Random.Range(0, 5);
+        // Multiply equation
         if (isMultiplyEquation > 1 && _currentLevel >= 2)
         {
             _1stNum = Random.Range(0, _maxMultiplyNum);
             _2ndNum = Random.Range(0, _maxMultiplyNum);
             _ans = _1stNum * _2ndNum;
 
-            _correctness = Random.Range(0, _numberOfWrongs + 4);
+
             if (_correctness == (int)WrongMechanism.CHANGE_THE_SIGN && _ans != 0)
             {
                 _ans = -_ans;
@@ -143,7 +147,8 @@ public class GenerateEquation : Subject, IObserver
             }
 
             _ans = _1stNum + _2ndNum;
-            _correctness = Random.Range(0, _numberOfWrongs + 4);
+
+            
 
             // if the equation is set to false
             if (_correctness == (int)WrongMechanism.CHANGE_THE_SIGN && _ans != 0)
@@ -203,6 +208,26 @@ public class GenerateEquation : Subject, IObserver
         {
             GameOver();
         }
+    }
+
+    public void CheckCorrectnessSequence()
+    {
+        //If right sequence is too long -> make sure this equation is wrong
+        if (_cntCorrectness >= _maxCorrectnessSequence)
+        {   
+            _correctness = Random.Range(0, _numberOfWrongs);
+        }// If wrong sequence is too long -> .. right
+        else if (_cntCorrectness <= -_maxCorrectnessSequence)
+        {
+            _correctness = _numberOfWrongs;
+        }
+
+        //If the current equation is not correct
+        if (_correctness < _numberOfWrongs)
+        {
+            _cntCorrectness--;
+        }
+        else _cntCorrectness++;
     }
 
     public void CorrectAnswer()
