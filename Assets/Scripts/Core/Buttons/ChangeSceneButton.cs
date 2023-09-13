@@ -12,7 +12,7 @@ public class ChangeSceneButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
     [SerializeField] private Sprite _default, _pressed;
     [SerializeField] private AudioClip _compressedClip, _uncompressedClip;
     [SerializeField] private AudioSource _audioSource;
-    [SerializeField] Animator _transition;
+    // [SerializeField] Animator _transition;
     [SerializeField] float _transitionTime = .44f;
     string a_StartCrossfade = "StartCrossfade";
 
@@ -75,7 +75,7 @@ public class ChangeSceneButton : MonoBehaviour, IPointerDownHandler, IPointerUpH
 
     IEnumerator LoadLevel(int _sceneId)
     {
-        _transition.SetTrigger(a_StartCrossfade);
+        // _transition.SetTrigger(a_StartCrossfade);
         yield return new WaitForSeconds(_transitionTime);
         SceneManager.LoadScene(_sceneId);
     }

@@ -13,8 +13,9 @@ public class PEAllStates : BaseState
     protected Text _scoreText;
     protected Text _gameOverText;
 
-    protected int _easyLevelPassScore = 3;
-    protected int _mediumLevelPassScore = 6;
+    protected int _easyLevelPassScore = 12;
+    protected int _mediumLevelPassScore = 20;
+    protected int _hardLevelPassScore = 35;
     public PEAllStates(string name, StateMachine stateMachine) : base(name, stateMachine)
     {
         _pEStateMachine = (PEStateMachine) stateMachine;

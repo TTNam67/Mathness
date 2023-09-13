@@ -31,6 +31,10 @@ public class PEPlayState : PEAllStates
         {
             _pEStateMachine.NotifyObservers(EPState.MEDIUM_LEVEL_PASSED);
         }
+        else if (_pEStateMachine.PlayerScore == _hardLevelPassScore)
+        {
+            _pEStateMachine.NotifyObservers(EPState.HARD_LEVEL_PASSED);
+        }
 
 
 

@@ -15,45 +15,40 @@ public class GenerateWords : Subject, IObserver
     [SerializeField] TextAsset _a2;
     [SerializeField] TextAsset _b1;
     [SerializeField] TextAsset _textAsset;
-    [SerializeField] Text[] _words;//list of words
-    [SerializeField] Text[] _meanings; // list of meanings
+    [SerializeField] Text[] _words;//list of displaying words
+    [SerializeField] Text[] _meanings; // list of displaying meanings
+    [SerializeField] CountdownBarEnglish _countDownBarEnglish;
+    [SerializeField] GameObject _gameOverScreen;
+    int _totalWords;
+    int _wordId = 5;
     void Start()
     {
+        _gameOverScreen.SetActive(false);
         _prevOption.Tag = "";
+        AddObserver(_countDownBarEnglish);
+
     }
+
+
+
 
     //Generate words when enter the game
     public void Generate()
     {
         //Temporarily contains the displaying words
-        List <string> tmpKeyList = new List<string>();
+        List<string> tmpKeyList = new List<string>();
 
-        for (int i = 0; i < 5; i++)
+        _totalWords = _data.GetWordData().Count;
+        for (int i = 0; i < _wordId; i++)
         {
-            int max = _data._keyList.Count;
-            int tmp = Random.Range(0, max);
-            _words[i].text = _data._keyList[tmp];
-            tmpKeyList.Add(_words[i].text);
-        }
-
-        //Shuffle the keyList
-        for (int i = 0; i < 5; i++) 
-        {
-            int j = Random.Range(0, 5);
-            string temp = tmpKeyList[i];
-            tmpKeyList[i] = tmpKeyList[j];
-            tmpKeyList[j] = temp;
-        }
-
-        for (int i = 0; i < 5; i++)
-        {
-            _meanings[i].text = _data._dictionary[tmpKeyList[i]];
+            _words[i].text = _data.GetWordData()[i];
+            _meanings[i].text = _data.GetMeaningData()[i];
         }
     }
 
     public void CheckAnswer(EOption currentOption)
     {
- 
+
         //If player havent selected any box -> tick the box player have just selected 
         if (_tmpTag == "")
         {
@@ -69,36 +64,35 @@ public class GenerateWords : Subject, IObserver
             if (_prevOption.Tag == currentOption.Tag)
             {
                 print("tag is the same");
-                _prevOption.Reset();
+                _prevOption.Unticked();
                 _tmpTag = "";
                 // _options[0].Reset();
             }
             // If 2 boxes are selected have different tags -> check the correctness
             else
-            {   
-                if (_data._dictionary.ContainsKey(_prevOption._displayText.text))
+            {
+                if (_prevOption.Tag == "m")
                 {
-                    if (_data._dictionary[_prevOption._displayText.text] == currentOption._displayText.text)
-                    {
-                        print("meaning matched 1st way");
-                        NotifyObservers(EPState.GET_SCORE);
-                    }
+                    Swap(ref _prevOption, ref currentOption);
                 }
-                else if (_data._dictionary.ContainsKey(currentOption._displayText.text))
+
+                if ((_data._dictionary.ContainsKey(_prevOption._displayText.text) && _data._dictionary[_prevOption._displayText.text] == currentOption._displayText.text))
                 {
-                    if (_data._dictionary[currentOption._displayText.text] == _prevOption._displayText.text)
-                    {
-                        print("meaning matched 2nd way");
-                        NotifyObservers(EPState.GET_SCORE);
-                    }
+                    NotifyObservers(EPState.GET_SCORE);
+                    _prevOption.Reset();
+                    currentOption.Reset();
+
+                    // Add new words
+                    StartCoroutine(AddNewWords(currentOption));
+
                 }
-                else 
+                else
                 {
                     print("no match");
                 }
                 _tmpTag = "";
-                _prevOption.Reset();
-                currentOption.Reset();
+                _prevOption.Unticked();
+                currentOption.Unticked();
                 // _prevOption = new EOption();
             }
         }
@@ -106,11 +100,33 @@ public class GenerateWords : Subject, IObserver
 
     }
 
+    IEnumerator AddNewWords(EOption currentOption)
+    {
+        yield return new WaitForSeconds(0.25f);
+        _prevOption._displayText.text = _data.GetWordData()[_wordId];
+        currentOption._displayText.text = _data.GetMeaningData()[_wordId];
+        _wordId++;
+    }
+
     public void OnNotify(EPState pState)
     {
 
     }
 
-    
+    public void Swap(ref EOption a, ref EOption b)
+    {
+        var tmp = a;
+        a = b;
+        b = tmp;
+    }
+
+    public void GameOver()
+    {
+        NotifyObservers(EPState.GAME_OVER);
+        _gameOverScreen.SetActive(true);
+        this.gameObject.SetActive(false);
+        this.enabled = false;
+    }
+
 
 }

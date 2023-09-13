@@ -35,6 +35,7 @@ public class PEStateMachine : StateMachine, IObserver
            Debug.Log("Scoretext" + _scoreText);
         
         AddObserver(_generateWords);
+        
         _generateWords.AddObserver(this);
 
         _pEPlayState = new PEPlayState(this);

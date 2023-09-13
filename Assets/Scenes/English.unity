@@ -1055,6 +1055,8 @@ MonoBehaviour:
   - {fileID: 26048793}
   - {fileID: 1104739131}
   - {fileID: 956545595}
+  _countDownBarEnglish: {fileID: 913550123}
+  _gameOverScreen: {fileID: 1089484276}
 --- !u!1 &814709395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 913550122}
   _image: {fileID: 0}
-  _generateEquation: {fileID: 0}
+  _generateWords: {fileID: 676806126}
 --- !u!1001 &956545593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2160,7 +2162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dataFile: {fileID: 4900000, guid: 0b9ea437c8604b64ab6b6df4ea9d4f49, type: 3}
-  _keyList: []
+  _wordData: []
+  _meaningData: []
 --- !u!4 &1230860575
 Transform:
   m_ObjectHideFlags: 0
