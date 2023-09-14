@@ -21,6 +21,7 @@ public class PGameOverState : PAllStates
 
     public override void UpdateLogic()
     {
+        _audioSource.Stop();
         base.UpdateLogic();
     }
 
