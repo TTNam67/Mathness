@@ -22,6 +22,7 @@ public class PEGameOverState : PEAllStates
     public override void UpdateLogic()
     {
         base.UpdateLogic();
+        _audioSource.Stop();
     }
 
     public override void Exit()
