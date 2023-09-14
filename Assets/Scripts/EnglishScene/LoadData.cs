@@ -77,7 +77,7 @@ public class LoadData : MonoBehaviour
                 Swap2Elements(_meaningData, i + 1, i + 2);
                 i += 1;
             }
-            else if (opt == 1)
+            else 
             {
                 Swap2Elements(_meaningData, i, i + 1);
             }

@@ -13,24 +13,26 @@ public class BackgroundMusic : MonoBehaviour, IObserver
         MEDIUM2,
     }
 
-    //private static MainMenuBackgroundMusic _instance;
-    //public static MainMenuBackgroundMusic Instance
-    //{
-    //    get
-    //    {
-    //        if (_instance == null)
-    //        {
-    //            _instance = new MainMenuBackgroundMusic();
-    //        }
-    //        return _instance;
-    //    }
-    //}
+    public static BackgroundMusic _instance;
 
     AudioSource _audioSource;
     [SerializeField] AudioClip[] _backgroundClips;
     [SerializeField] AudioClip _congratulationSFX;
     float _backgroundMusicVolume = 0.60f;
     
+    void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else 
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
@@ -40,8 +42,6 @@ public class BackgroundMusic : MonoBehaviour, IObserver
         _audioSource.clip = _backgroundClips[(int)EBackgroundClip.EASY1];
         _audioSource.volume = _backgroundMusicVolume;
         _audioSource.Play();
-
-        //DontDestroyOnLoad(this.gameObject);
 
     }
 
