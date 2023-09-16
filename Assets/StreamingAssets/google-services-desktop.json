@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "211299501489",
+    "firebase_url": "https://mathness-4a41c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mathness-4a41c",
+    "storage_bucket": "mathness-4a41c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211299501489:android:01a3fabe6f9db1c21de990",
+        "android_client_info": {
+          "package_name": "com.google.firebase.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbn1W5BuizwOHEZWUaZ-ijfwa_l8GijDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

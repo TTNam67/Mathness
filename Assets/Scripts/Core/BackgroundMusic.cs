@@ -16,8 +16,8 @@ public class BackgroundMusic : MonoBehaviour, IObserver
     public static BackgroundMusic _instance;
 
     AudioSource _audioSource;
-    [SerializeField] AudioClip[] _backgroundClips;
-    [SerializeField] AudioClip _congratulationSFX;
+    
+    [SerializeField] AudioClip _backgroundMusic;
     float _backgroundMusicVolume = 0.60f;
     
     void Awake()
@@ -39,7 +39,7 @@ public class BackgroundMusic : MonoBehaviour, IObserver
         if (_audioSource == null)
             Debug.LogWarning("SoundController.cs: AudioSource is not found");
 
-        _audioSource.clip = _backgroundClips[(int)EBackgroundClip.EASY1];
+        _audioSource.clip = _backgroundMusic;
         _audioSource.volume = _backgroundMusicVolume;
         _audioSource.Play();
 

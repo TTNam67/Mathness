@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBRg8zm5xM_bJBLJihjmVWWKpsx6zgO8cM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>211299501489</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.google.firebase.test.nam</string>
+	<key>PROJECT_ID</key>
+	<string>mathness-4a41c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mathness-4a41c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:211299501489:ios:a30251dc9b0ffbe31de990</string>
+	<key>DATABASE_URL</key>
+	<string>https://mathness-4a41c-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
