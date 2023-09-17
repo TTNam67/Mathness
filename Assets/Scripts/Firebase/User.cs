@@ -5,13 +5,15 @@ using UnityEngine;
 public class User 
 {
     public string username;
-    public string email;
+    public int mathModePoints;
+    public int englishModePoints;
 
     public User() {
     }
 
-    public User(string username, string email) {
+    public User(string username, int mathModePoints, int englishModePoints) {
         this.username = username;
-        this.email = email;
+        this.mathModePoints = mathModePoints;
+        this.englishModePoints = englishModePoints;
     }
 }

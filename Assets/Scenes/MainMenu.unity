@@ -240,7 +240,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123, y: -134.43}
+  m_AnchoredPosition: {x: -7, y: -134.43}
   m_SizeDelta: {x: 210.3704, y: 76.2963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275399717
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 1150703544}
   - component: {fileID: 1150703543}
   m_Layer: 0
-  m_Name: testFirebase
+  m_Name: DataManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -871,11 +871,11 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 55
-    m_FontStyle: 2
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 177
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1428,7 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695058055567004633, guid: 591d5173f3bcaab4c9d1b4185c06dfbe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4695058055567004633, guid: 591d5173f3bcaab4c9d1b4185c06dfbe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

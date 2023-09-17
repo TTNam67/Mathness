@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using ObserverPattern;
+using Firebase;
+using Firebase.Database;
 
 using FSM;
 
@@ -19,9 +21,14 @@ public class PEStateMachine : StateMachine, IObserver
     public Text _gameOverText;
     public int _playerScore = 0;
     
+    string _userID;
+    DatabaseReference _databaseReference;
+    
 
     private void Awake()
     {
+        _userID = SystemInfo.deviceUniqueIdentifier;
+        _databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
         _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null)
             Debug.Log("AudioSource: " + _audioSource);
@@ -61,10 +68,12 @@ public class PEStateMachine : StateMachine, IObserver
             _audioSource.volume = .55f;
             _audioSource.Play();
             _playerScore++;
+            _databaseReference.Child("users").Child(_userID).Child("mathModePoints").SetValueAsync((int)_playerScore);
         }
         else if (pState == EPState.GAME_OVER)
         {
             ChangeState(_pEGameOverState);
+            
         }
     }   
 
